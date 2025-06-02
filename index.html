@@ -9,109 +9,222 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #f8f8f8;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-        h1 {
-            margin: 0;
             color: #333;
+            line-height: 1.4;
         }
-        nav {
+        
+        /* Header styles */
+        .header {
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+            color: #000;
+        }
+        
+        /* Navigation */
+        .nav {
             display: flex;
-            justify-content: space-between;
-            margin-top: 15px;
+            margin-top: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
         }
-        nav a {
+        
+        .nav a {
             text-decoration: none;
             color: #333;
             padding: 5px 10px;
+            font-size: 14px;
+            margin-right: 5px;
         }
+        
+        /* Main content layout */
         .container {
             display: flex;
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+        
         .left-column {
-            flex: 1;
+            width: 50%;
             padding-right: 20px;
+            border-right: 1px solid #ccc;
         }
+        
         .right-column {
-            flex: 1;
+            width: 50%;
             padding-left: 20px;
         }
-        .login-form {
-            margin-bottom: 30px;
+        
+        /* Login section */
+        .login-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: normal;
         }
-        .form-group {
+        
+        .login-section p {
+            font-size: 14px;
             margin-bottom: 15px;
         }
-        input[type="text"],
-        input[type="password"],
-        input[type="email"] {
+        
+        .form-row {
+            margin-bottom: 10px;
+        }
+        
+        .form-row label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .form-row input {
             width: 100%;
             padding: 8px;
-            margin-top: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
         }
-        .section {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
+        
+        .forgot-password {
+            font-size: 14px;
+            color: #0066cc;
+            text-decoration: none;
         }
-        .section h2, .section h3 {
-            color: #333;
+        
+        /* Remain section */
+        .remain-section {
+            margin-top: 30px;
         }
-        .benefits {
+        
+        .remain-section h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .remain-section h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .remain-section h3 strong {
+            font-weight: bold;
+        }
+        
+        .benefits-list {
             list-style-type: none;
             padding-left: 0;
+            margin: 0;
         }
-        .benefits li {
-            margin-bottom: 10px;
-            padding-left: 20px;
+        
+        .benefits-list li {
             position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
-        .benefits li:before {
-            content: "-";
+        
+        .benefits-list li:before {
+            content: "•";
             position: absolute;
             left: 0;
         }
-        table {
+        
+        /* New customer section */
+        .new-customer h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .form-table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 15px;
         }
-        table td {
-            padding: 8px;
+        
+        .form-table td {
+            padding: 5px 0;
             vertical-align: top;
+            font-size: 14px;
         }
+        
+        .form-table td:first-child {
+            width: 40%;
+        }
+        
+        .password-note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        /* Telephone section */
+        .telephone-section {
+            margin-top: 30px;
+        }
+        
+        .telephone-section h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        
+        .telephone-section h4 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .address-field {
+            font-size: 14px;
+        }
+        
+        /* Footer */
         .footer {
-            background-color: #f8f8f8;
-            padding: 20px;
-            text-align: center;
-            border-top: 1px solid #ddd;
-            margin-top: 20px;
+            padding: 15px 20px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
         }
+        
+        .cookie-notice {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
         .cookie-settings {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
         }
-        .btn {
-            padding: 8px 15px;
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .cookie-button {
+            padding: 5px 15px;
             background-color: #333;
             color: white;
             border: none;
             cursor: pointer;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>ULTRA/SCHALL-WELLS</h1>
-        <nav>
+        <div class="nav">
             <a href="#">Home</a>
             <a href="#">News</a>
             <a href="#">Ultrasonic cleaner</a>
@@ -121,30 +234,30 @@
             <a href="#">Our company</a>
             <a href="#">References</a>
             <a href="#">FAQ</a>
-        </nav>
-    </header>
+        </div>
+    </div>
 
     <div class="container">
         <div class="left-column">
-            <div class="login-form">
+            <div class="login-section">
                 <h3>I am already a customer</h3>
                 <p>Login with your email address and password</p>
-                <div class="form-group">
+                <div class="form-row">
                     <label>Your email address</label>
                     <input type="email">
                 </div>
-                <div class="form-group">
+                <div class="form-row">
                     <label>Your password</label>
                     <input type="password">
                 </div>
-                <a href="#">Forget your password?</a>
+                <a href="#" class="forgot-password">Forget your password?</a>
             </div>
 
-            <div class="section">
+            <div class="remain-section">
                 <h2>Remain</h2>
                 <h3>Anmelden mit <strong>aquazon</strong></h3>
                 <h4>My benefits</h4>
-                <ul class="benefits">
+                <ul class="benefits-list">
                     <li>Fast shopping</li>
                     <li>Store your user data and settings</li>
                     <li>Insight into your orders but Broadcast information</li>
@@ -154,9 +267,9 @@
         </div>
 
         <div class="right-column">
-            <div class="section">
+            <div class="new-customer">
                 <h3>I am a new customer</h3>
-                <table>
+                <table class="form-table">
                     <tr>
                         <td>I am*</td>
                         <td></td>
@@ -182,26 +295,28 @@
                         <td></td>
                     </tr>
                 </table>
-                <p>'Your password must include at least 8 characters. Contact us for the same time.</p>
+                <p class="password-note">'Your password must include at least 8 characters. Contact us for the same time.</p>
             </div>
 
-            <div class="section">
+            <div class="telephone-section">
                 <h3>Telephone</h3>
                 <h4>Your address</h4>
-                <p>Street and no.*</p>
+                <p class="address-field">Street and no.*</p>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <p>This site uses cookies to give you the best possible experience. Data protection impression.</p>
-        <div class="cookie-settings">
-            <div>
-                <strong>Accessory Marketing Settings</strong>
-            </div>
-            <div>
-                <button class="btn">Confirm selection</button>
-                <button class="btn">Select all</button>
+        <div class="cookie-notice">
+            <p>This site uses cookies to give you the best possible experience. Data protection impression.</p>
+            <div class="cookie-settings">
+                <div>
+                    <strong>Accessory Marketing Settings</strong>
+                </div>
+                <div class="cookie-buttons">
+                    <button class="cookie-button">Confirm selection</button>
+                    <button class="cookie-button">Select all</button>
+                </div>
             </div>
         </div>
     </div>
